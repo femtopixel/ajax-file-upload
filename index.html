@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script type='text/javascript' src='js/prototype.js'></script>
+		<script type='text/javascript' src='js/scriptaculous.js'></script>
+		<script type='text/javascript' src='js/ajax.fileupload.js'></script>
+		<style type='text/css'>
+			#ajaxfileupload_infos {
+				background-color:#FF0000;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id='fileupload'></div>
+	</body>
+	<script type='text/javascript'>
+		test = new Ajax.FileUpload('fileupload', 'ajax/fileupload.php');
+	</script>
+</html>

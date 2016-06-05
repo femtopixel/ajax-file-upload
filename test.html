@@ -1,0 +1,11 @@
+<script type='text/javascript'>
+function test(element)
+{
+	document.getElementById('tester').innerHTML = "<iframe name='tester' onload='alert(\"test\");'></iframe>";
+	document.getElementById('myform').submit();
+}
+</script>
+<div id='tester'></div>
+<form method='post' action='ajax/fileupload.php' target='tester' id='myform' enctype='multipart/form-data'>
+<input type='file' name='file' onchange='test(this);'/>
+</form>
